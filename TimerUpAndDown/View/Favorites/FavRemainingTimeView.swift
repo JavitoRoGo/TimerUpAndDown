@@ -43,7 +43,7 @@ struct FavRemainingTimeView: View {
 			.onAppear {
 				calculateRemainingTime()
 			}
-			.onChange(of: timerIsRunning) { _ in
+			.onChange(of: timerIsRunning) {
 				calculateRemainingTime()
 			}
 			.onReceive(timer) { _ in

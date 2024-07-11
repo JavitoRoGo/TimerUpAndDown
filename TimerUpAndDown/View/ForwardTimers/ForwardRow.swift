@@ -50,7 +50,7 @@ struct ForwardRow: View {
         .onAppear {
             calculatePassedTime()
         }
-        .onChange(of: timerIsRunning) { _ in
+        .onChange(of: timerIsRunning) {
             calculatePassedTime()
         }
         .onReceive(timer) { _ in
